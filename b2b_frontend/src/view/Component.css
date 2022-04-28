@@ -1,0 +1,126 @@
+.Header{
+    position: relative;
+    height: 6rem;
+    background-color: #2d4250;
+}
+
+.Header .Logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20rem;
+}
+
+.Header .ABCLogo {
+    width: 16rem;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-20%,-50%);
+}
+
+.Navbar{
+    height: 4rem;
+    background-color: #283d4a;
+    position: relative;
+}
+
+.Navbar .ButtonGroup1{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%,-50%);
+}
+.Navbar .ButtonGroup2{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0%,-50%);
+}
+
+.Navbar .Button{
+    font-size: 1rem;
+    min-width: 10rem;
+    color: white;
+    border: 0.15rem solid lightskyblue;
+    z-index: 500;
+}
+
+.Navbar .Button:hover{
+    background-color: lightskyblue;
+}
+
+.Navbar .Button:disabled{
+    border: 0.15rem solid grey;
+    color: white;
+    z-index: -500;
+}
+.Navbar .Button-mid:disabled{
+    border-left: 0.15rem solid lightskyblue;
+    color: white;
+}
+
+.Navbar .Search{
+    background-color: white;
+    
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Footer{
+
+    height:3.9rem;
+    width: 100%;
+    background-color: #2d4250;
+    position: relative;
+    
+}
+
+.Footer .footer-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:aliceblue
+}
+
+.Footer .footer-text a{
+    color: lightskyblue;
+}
+
+@media(max-height :495px){
+    .Header{
+        height: 20vh;
+    }
+    
+    .Header .Logo{
+       width: 20vw;
+      
+    }
+    
+    .Header .ABCLogo{
+        width: 18vw;
+    }
+
+    .Navbar{
+        height: 13.2vh;
+    }
+   
+    .Footer{
+        height: 13.2vh;
+    }
+}
+
+@media(max-height : 693px){
+    .Navbar .Button{
+        font-size: 0.7vw;
+        min-width: 10vw;
+        max-width: 10vw;
+        border-width: 0.2vw;
+    }
+}
